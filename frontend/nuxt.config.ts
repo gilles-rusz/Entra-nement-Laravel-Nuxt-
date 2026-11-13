@@ -6,9 +6,13 @@ export default defineNuxtConfig({
   ssr: false,
   runtimeConfig: {
     public: {
-      // Adresse de l'API Laravel, modifiable avec la variable NUXT_PUBLIC_API_BASE.
-      apiBase: 'http://localhost:8000/api/v1',
+      apiBase: '/api/v1',
     },
+  },
+  // Nuxt transmet les appels /api/... à Laravel (port 8000) : le navigateur ne parle qu'à Nuxt,
+  // donc pas de souci de CORS.
+  routeRules: {
+    '/api/**': { proxy: 'http://localhost:8000/api/**' },
   },
   app: {
     head: { title: 'Entraînement Laravel + Nuxt', htmlAttrs: { lang: 'fr' } },
