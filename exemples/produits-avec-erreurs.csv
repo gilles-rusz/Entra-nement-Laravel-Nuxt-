@@ -1,0 +1,7 @@
+reference;marque;modele;dimension;saison;prix_ht;stock
+PI-P7-20555;Pirelli;Cinturato P7;205/55 R16;ete;92,40;12
+;Pirelli;Sans reference;205/55 R16;ete;80,00;5
+PI-WS-20555;Pirelli;Winter Sottozero 3;205/55R16;hiver;118,00;9
+PI-CW-22545;Pirelli;Cinturato Winter 2;225/45 R17;printemps;131,00;7
+PI-SC-19565;Pirelli;Scorpion;195/65 R15;ete;abc;10
+PI-PZ-22545;Pirelli;P Zero;225/45 R17;ete;189,00
