@@ -98,5 +98,6 @@ Envoyer `exemples/produits-avec-erreurs.csv` depuis la page Import pour voir le 
 ## Côté Nuxt
 
 - `frontend/app/composables/useApi.ts` : toutes les requêtes passent par là, le token est ajouté automatiquement.
+- `frontend/nuxt.config.ts` : les appels `/api/...` sont transmis par Nuxt à Laravel (port 8000), il faut donc lancer les deux serveurs.
 - `frontend/app/pages/` : une page = une route (`index.vue` = connexion, `produits.vue`, `import.vue`).
 - `ref()`, `reactive()`, `computed()`, `watch()` : la réactivité de Vue 3, l'équivalent de `useState`, `useMemo` et `useEffect` en React.
